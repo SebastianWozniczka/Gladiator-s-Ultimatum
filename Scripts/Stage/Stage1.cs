@@ -12,7 +12,7 @@ public class Stage1 : MonoBehaviour
     public Button buttonSettings,buttonNewGame;
     void Start()
     {
-        buttonSettings.onClick.AddListener(StartAudio);
+        buttonSettings.onClick.AddListener(StartSettings);
         buttonNewGame.onClick.AddListener(StartGameplay);
     }
 
@@ -24,6 +24,11 @@ public class Stage1 : MonoBehaviour
     void StartGameplay()
     {
         SceneManager.LoadScene("GameplayScene");
+    }
+
+     void StartSettings()
+    {
+        SceneManager.LoadScene("Settings");
     }
 
 
